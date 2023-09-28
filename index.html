@@ -1,25 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba publico git</title>
+    <title>Tienda de Vidrios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #3498db;
+            padding: 20px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        #logo {
+            width: 150px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .product {
+            background-color: #ecf0f1;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .product img {
+            max-width: 100%;
+        }
+
+        footer {
+            background-color: #3498db;
+            padding: 10px 0;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    
-    <style> 
-    body {
-    background: #a57a7a;
-    margin-top: 300px;
-
-
-    }
-
-
-
-    </style>
-    <center>
-        <h1> Holaaa amigos</h1>
-    </center>
+    <header>
+        <img src="glass.png" id="logo" alt="Logo de la Tienda de Vidrios">
+        <h1>Tienda de Vidrios Divertidos</h1>
+    </header>
+    <div class="container">
+        <p>¡Bienvenido a la tienda más loca de vidrios en la web! Aquí encontrarás vidrios que te harán reír a carcajadas.</p>
+        <div class="product">
+            <h2>Vidrio de la Risa</h2>
+            <img src="funny-glass.jpg" alt="Vidrio de la Risa">
+            <p>Este vidrio tiene una forma tan extraña que no podrás evitar reírte cada vez que lo mires. ¡Diviértete bebiendo con estilo!</p>
+            <p><strong>Precio: $19.99</strong></p>
+        </div>
+        <div class="product">
+            <h2>Vidrio Invisible</h2>
+            <img src="invisible-glass.jpg" alt="Vidrio Invisible">
+            <p>¡Sorprende a tus amigos sirviendo bebidas en este vidrio aparentemente invisible! Seguro que les sacas una sonrisa.</p>
+            <p><strong>Precio: $24.99</strong></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Tienda de Vidrios Divertidos</p>
+    </footer>
 </body>
 </html>
