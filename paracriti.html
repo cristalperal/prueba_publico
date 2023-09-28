@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi amol por ti</title>
+    <style>
+        /* Estilos para el cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para los corazones */
+        .heart {
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Critii!</h1>
+    <p>Haz clic en la imagen para que veas mi amol por ti :</p>
+    
+    <div id="hearts">
+        <img src="https://ih0.redbubble.net/image.2454459288.1451/raf,360x360,075,t,fafafa:ca443f4786.jpg" alt="">
+    </div>
+
+    <script>
+        // Función para crear un corazón cuando se hace clic
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.innerHTML = "❤️";
+            heart.classList.add("heart");
+            const xPos = Math.random() * window.innerWidth;
+            const yPos = Math.random() * window.innerHeight;
+            heart.style.left = xPos + "px";
+            heart.style.top = yPos + "px";
+            document.getElementById("hearts").appendChild(heart);
+
+            // Eliminar el corazón después de un tiempo
+            setTimeout(() => {
+                heart.remove();
+            }, 2000);
+        }
+
+        // Agregar corazones cuando se hace clic en cualquier parte de la página
+        document.body.addEventListener("click", createHeart);
+    </script>
+</body>
+</html>
